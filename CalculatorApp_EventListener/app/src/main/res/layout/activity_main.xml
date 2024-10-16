@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="26px"
-            android:text="0"
+            android:text="15"
             android:textColor="#CD000000"
             android:textSize="100sp"
             app:layout_constraintBottom_toBottomOf="parent"

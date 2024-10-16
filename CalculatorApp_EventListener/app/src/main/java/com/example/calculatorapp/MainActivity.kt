@@ -34,12 +34,12 @@ class MainActivity : AppCompatActivity() {
         val btnDiv = findViewById<Button>(R.id.btnDiv)
         val btnCal = findViewById<Button>(R.id.btnCal)
 
-        // Khai báo các biến lưu trữ giá trị và toán tử
+
         var value1: Double = 0.0
         var value2: Double = 0.0
         var operator: String? = null
 
-// Lắng nghe các sự kiện click
+
         val clickListener = View.OnClickListener { view ->
             when (view.id) {
                 R.id.btn7 -> {
@@ -62,6 +62,22 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
+                R.id.btn1 -> {
+                    txtScreen.text = txtScreen.text.toString() + "1"
+                }
+                R.id.btn2 -> {
+                    txtScreen.text = txtScreen.text.toString() + "2"
+                }
+                R.id.btn3 -> {
+                    txtScreen.text = txtScreen.text.toString() + "3"
+                }
+                R.id.btn4 -> {
+                    txtScreen.text = txtScreen.text.toString() + "4"
+                }
+                R.id.btn5 -> {
+                    txtScreen.text = txtScreen.text.toString() + "5"
+                }
+
                 R.id.btnSum -> {
                     operator = "+"
                     txtScreen.text = txtScreen.text.toString() + " + "
@@ -76,10 +92,10 @@ class MainActivity : AppCompatActivity() {
                         else -> 0.0
                     }
 
-                    // Hiển thị phép tính và kết quả trên txtScreen
+
                     txtScreen.text = "${value1.toInt()} $operator ${value2.toInt()} = $result"
                 }
-                // Có thể thêm các nút khác như btnSub, btnMul, btnDiv theo cách tương tự
+
             }
         }
 
