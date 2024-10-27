@@ -25,8 +25,10 @@ class MainActivity : AppCompatActivity() {
         // Khai báo list_item
         var list = mutableListOf<OutData>()
         list.add(OutData(R.drawable.avatar01, R.drawable.arrow, R.drawable.star, "Edurila.com", "12:34 PM", "$19 Only (First 10 spots) - Bestselling...", "Are you looking to Learn Web Designin..."))
-        list.add(OutData(R.drawable.avatar01, R.drawable.arrow, R.drawable.star, "Edurila.com", "12:34 PM", "$19 Only (First 10 spots) - Bestselling...", "Are you looking to Learn Web Designin..."))
-        list.add(OutData(R.drawable.avatar01, R.drawable.arrow, R.drawable.star, "Edurila.com", "12:34 PM", "$19 Only (First 10 spots) - Bestselling...", "Are you looking to Learn Web Designin..."))
+        list.add(OutData(R.drawable.avatar02, R.drawable.arrow, R.drawable.star, "Chris Abad", "12:34 PM", "Help make Campaign Monitor better", "Let us know your thoughts! No Images..."))
+        list.add(OutData(R.drawable.avatar03, R.drawable.arrow, R.drawable.star, "Tuto.com", "12:34 PM", "8h de formation gratuite et les nouvea...", "Photoshop, SEO, Blender, CSS, WordPre..."))
+        list.add(OutData(R.drawable.avatar04, R.drawable.arrow, R.drawable.star, "support", "12:34 PM", "Société Ovh: suivi de vos services - hp...", "SAS OVH - http://www.ovh.com 2 rue K..."))
+        list.add(OutData(R.drawable.avatar05, R.drawable.arrow, R.drawable.star, "Matt from lonic", "12:34 PM", "The New lonic Creator Is Here!", "Are you looking to Learn Web Designin..."))
 
         // Cập nhật adapter
         customAdapter = CustomAdapter(this, list)
